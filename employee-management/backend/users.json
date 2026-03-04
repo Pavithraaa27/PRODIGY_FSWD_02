@@ -1,2 +1,5 @@
-{ }
-
+{
+  "admin@gmail.com": {
+    "password": "$2a$10$0I3Lg07n9GOk5Sddifk0YuwTTCBfyJ6JbUuxLXeI0gsAh.zjnbnNi"
+  }
+}
