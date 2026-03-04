@@ -122,3 +122,4 @@ async function deleteEmp(id) {
     alert("Server error while deleting employee.");
   }
 }
+
