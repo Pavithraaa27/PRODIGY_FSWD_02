@@ -65,7 +65,7 @@ secure-employee-manager/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/Pavithraaa27/PRODIGY_FSWD_02.git
+git clone https://github.com/Pavithraaa27/secure-employee-manager.git
 ```
 
 ### 2️⃣ Install Dependencies
