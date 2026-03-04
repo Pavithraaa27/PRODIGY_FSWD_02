@@ -1,52 +1,46 @@
-🔐 Secure Employee Manager
+# 🔐 Secure Employee Manager  
 
-A full-stack Employee Management System with secure authentication using JWT.
-Built using Node.js, Express, and Vanilla JavaScript.
+A full-stack Employee Management System with secure authentication using JWT.  
+Built using **Node.js, Express, and Vanilla JavaScript**.
 
 This project demonstrates backend authentication, protected API routes, and CRUD operations with seamless frontend–backend integration.
 
-🚀 Features
+---
 
-🔑 Admin login with JWT authentication
+## 🚀 Features
 
-🔐 Protected routes using middleware
+- 🔑 Admin login with JWT authentication  
+- 🔐 Protected routes using middleware  
+- 👨‍💼 Add new employees  
+- 🗑 Delete employees  
+- 📄 Retrieve employee list  
+- 🔒 Secure password hashing with bcrypt  
+- 🌐 Frontend–backend integration  
+- 📦 File-based JSON data storage  
 
-👨‍💼 Add new employees
+---
 
-🗑 Delete employees
+## 🛠 Tech Stack
 
-📄 Retrieve employee list
+### Frontend
+- HTML5  
+- Tailwind CSS  
+- Vanilla JavaScript  
 
-🔒 Secure password hashing with bcrypt
+### Backend
+- Node.js  
+- Express.js  
+- JSON Web Token (JWT)  
+- bcrypt.js  
 
-🌐 Frontend–backend integration
+### Data Storage
+- File-based JSON storage  
 
-📦 File-based JSON data storage
+---
 
-🛠 Tech Stack
-Frontend
+## 📁 Project Structure
 
-HTML5
-
-Tailwind CSS
-
-Vanilla JavaScript
-
-Backend
-
-Node.js
-
-Express.js
-
-JSON Web Token (JWT)
-
-bcrypt.js
-
-Data Storage
-
-File-based JSON storage
-
-📁 Project Structure
+```
 secure-employee-manager/
 │
 ├── client/
@@ -62,49 +56,76 @@ secure-employee-manager/
 ├── .env
 ├── .gitignore
 └── package.json
-⚙️ Setup Instructions
-1️⃣ Clone the Repository
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/Pavithraaa27/PRODIGY_FSWD_02.git
-2️⃣ Install Dependencies
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
 cd server
 npm install
-3️⃣ Create a .env File (in the root folder)
+```
+
+### 3️⃣ Create a `.env` File (in the root folder)
+
+```
 JWT_SECRET=your_secret_key_here
-4️⃣ Start the Backend Server
+```
+
+### 4️⃣ Start the Backend Server
+
+```bash
 node server.js
+```
 
 The server will run at:
 
+```
 http://localhost:3000
-5️⃣ Open the Frontend
+```
 
-Open the following file in your browser:
+### 5️⃣ Open the Frontend
 
+Open:
+
+```
 client/index.html
-🔐 Authentication Flow
+```
 
-Admin logs in using email and password
+in your browser.
 
-Server validates credentials
+---
 
-JWT token is generated upon successful login
+## 🔐 Authentication Flow
 
-Token is required to access employee routes
+1. Admin logs in using email and password  
+2. Server validates credentials  
+3. JWT token is generated upon successful login  
+4. Token is required to access employee routes  
+5. Middleware verifies the token before granting access  
 
-Middleware verifies the token before granting access
+---
 
-📌 Learning Outcomes
+## 📌 Learning Outcomes
 
-Implemented JWT-based authentication
+- Implemented JWT-based authentication  
+- Built RESTful APIs using Express  
+- Secured routes using middleware  
+- Integrated frontend with backend APIs  
+- Managed file-based data persistence  
 
-Built RESTful APIs using Express
+---
 
-Secured routes using middleware
+## 👩‍💻 Author  
 
-Integrated frontend with backend APIs
-
-Managed file-based data persistence
-
-👩‍💻 Author
-
-Pavithra Nair
+**Pavithra Nair**  
+B.Tech Student | Aspiring Full Stack Developer  
