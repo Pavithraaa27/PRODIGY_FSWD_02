@@ -1,27 +1,29 @@
 🔐 Secure Employee Manager
 
 A full-stack Employee Management System with secure authentication using JWT.
-Built with Node.js, Express, and Vanilla JavaScript.
+Built using Node.js, Express, and Vanilla JavaScript.
 
-This project demonstrates backend authentication, protected API routes, and CRUD operations with frontend integration.
-
----
+This project demonstrates backend authentication, protected API routes, and CRUD operations with seamless frontend–backend integration.
 
 🚀 Features
 
-🔑 Admin Login with JWT Authentication
-🔐 Protected Routes using Middleware
-👨‍💼 Add Employees
-🗑 Delete Employees
-📄 Fetch Employee List
-🔒 Password Hashing with bcrypt
-🌐 Frontend–Backend Integration
-📦 JSON-based File Storage
+🔑 Admin login with JWT authentication
 
----
+🔐 Protected routes using middleware
+
+👨‍💼 Add new employees
+
+🗑 Delete employees
+
+📄 Retrieve employee list
+
+🔒 Secure password hashing with bcrypt
+
+🌐 Frontend–backend integration
+
+📦 File-based JSON data storage
 
 🛠 Tech Stack
-
 Frontend
 
 HTML5
@@ -44,10 +46,7 @@ Data Storage
 
 File-based JSON storage
 
----
-
 📁 Project Structure
-
 secure-employee-manager/
 │
 ├── client/
@@ -63,48 +62,48 @@ secure-employee-manager/
 ├── .env
 ├── .gitignore
 └── package.json
-
----
-
 ⚙️ Setup Instructions
-
 1️⃣ Clone the Repository
 git clone https://github.com/Pavithraaa27/PRODIGY_FSWD_02.git
 2️⃣ Install Dependencies
 cd server
 npm install
-3️⃣ Create .env File (in root folder)
+3️⃣ Create a .env File (in the root folder)
 JWT_SECRET=your_secret_key_here
-4️⃣ Start Backend Server
+4️⃣ Start the Backend Server
 node server.js
-Server will run on:
+
+The server will run at:
+
 http://localhost:3000
-5️⃣ Open Frontend
-Open:
+5️⃣ Open the Frontend
+
+Open the following file in your browser:
+
 client/index.html
-in your browser.
-
----
-
 🔐 Authentication Flow
 
-Admin logs in with email and password
-Server validates credentials
-JWT token is generated
-Token is required for all employee routes
-Middleware verifies token before granting access
+Admin logs in using email and password
 
----
+Server validates credentials
+
+JWT token is generated upon successful login
+
+Token is required to access employee routes
+
+Middleware verifies the token before granting access
 
 📌 Learning Outcomes
 
-Implemented JWT authentication
-Built RESTful API with Express
-Protected routes using middleware
-Integrated frontend with backend
-Managed file-based data persistence
+Implemented JWT-based authentication
 
----
+Built RESTful APIs using Express
+
+Secured routes using middleware
+
+Integrated frontend with backend APIs
+
+Managed file-based data persistence
 
 👩‍💻 Author
 
