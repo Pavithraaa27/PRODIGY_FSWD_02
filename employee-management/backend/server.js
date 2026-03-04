@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
+const path = require('path');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
@@ -17,6 +18,10 @@ if (!SECRET) {
   process.exit(1);
 }
 
+// File paths
+const usersFile = path.join(__dirname, 'data', 'users.json');
+const employeesFile = path.join(__dirname, 'data', 'employees.json');
+
 const read = (file) => JSON.parse(fs.readFileSync(file, 'utf-8'));
 const write = (file, data) =>
   fs.writeFileSync(file, JSON.stringify(data, null, 2));
@@ -24,7 +29,7 @@ const write = (file, data) =>
 // LOGIN
 app.post('/login', async (req, res) => {
   const { email, password } = req.body;
-  const users = read('users.json');
+  const users = read(usersFile);
 
   if (!users[email]) return res.status(401).send('Admin not found');
 
@@ -50,7 +55,7 @@ function auth(req, res, next) {
 
 // EMPLOYEE ROUTES
 app.get('/employees', auth, (req, res) => {
-  res.json(read('employees.json'));
+  res.json(read(employeesFile));
 });
 
 app.post('/employees', auth, (req, res) => {
@@ -58,34 +63,23 @@ app.post('/employees', auth, (req, res) => {
   if (!name || !email)
     return res.status(400).send('Name and Email required');
 
-  const employees = read('employees.json');
+  const employees = read(employeesFile);
   const newEmp = { id: Date.now(), name, email };
 
   employees.push(newEmp);
-  write('employees.json', employees);
+  write(employeesFile, employees);
 
   res.json(newEmp);
 });
 
-app.put('/employees/:id', auth, (req, res) => {
-  const employees = read('employees.json');
-
-  const updated = employees.map(emp =>
-    emp.id == req.params.id ? { ...emp, ...req.body } : emp
-  );
-
-  write('employees.json', updated);
-  res.send('Updated');
-});
-
 app.delete('/employees/:id', auth, (req, res) => {
-  const employees = read('employees.json');
+  const employees = read(employeesFile);
 
   const filtered = employees.filter(emp =>
     emp.id != req.params.id
   );
 
-  write('employees.json', filtered);
+  write(employeesFile, filtered);
   res.send('Deleted');
 });
 
