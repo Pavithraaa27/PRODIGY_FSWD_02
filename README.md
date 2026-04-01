@@ -9,7 +9,8 @@ This project demonstrates backend authentication, protected API routes, and CRUD
 
 ## 🚀 Features
 
-- 🔑 Admin login with JWT authentication  
+- 🔑 Admin login with JWT authentication
+- 
 - 🔐 Protected routes using middleware  
 - 👨‍💼 Add new employees  
 - 🗑 Delete employees  
