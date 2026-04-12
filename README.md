@@ -5,7 +5,6 @@ Built using **Node.js, Express, and Vanilla JavaScript**.
 
 This project demonstrates backend authentication, protected API routes, and CRUD operations with seamless frontend–backend integration.
 
-
 ---
 
 ## 🚀 Features
