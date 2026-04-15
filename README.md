@@ -18,7 +18,6 @@ This project demonstrates backend authentication, protected API routes, and CRUD
 - 🌐 Frontend–backend integration  
 - 📦 File-based JSON data storage  
 
-
 ---
 
 ## 🛠 Tech Stack
